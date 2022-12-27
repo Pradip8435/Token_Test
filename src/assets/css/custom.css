@@ -370,6 +370,7 @@ input[type="checkbox"][disabled]:after {
 /*  */
 .form-box {
    margin-top: var(--spacing-34);
+   margin-bottom: var(--spacing-16);
    /* box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px; */
    background-color: var(--color-white-white);
    padding: var(--spacing-12);
