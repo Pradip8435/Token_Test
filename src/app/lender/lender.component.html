@@ -1,0 +1,322 @@
+<div class="header">
+    <div class="heading">
+        <p>Analyze GST Data</p>
+    </div>
+    <div class="right-btns">
+        <button class="btn btn-custom btn-outline" data-target="#upload-files" data-toggle="modal">
+            <i class="bi bi-upload"></i> Upload GST PDF</button>
+        <button class="btn btn-custom btn-outline" routerLink="/placerequest">Get Consent from Borrower</button>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card custom-card">
+                <div class="card-body">
+                    <div class="table-filter">
+                        <div class="pull-left">
+                            <span>show
+                                <select name="" id="">
+                                    <option value="10">10</option>
+                                    <option value="10">20</option>
+                                    <option value="10">30</option>
+                                    <option value="10">40</option>
+                                    <option value="10">50</option>
+                                </select>
+                                entries
+                            </span>
+                        </div>
+                        <div class="pull-right">
+                            <div class="search-sec"><input class="search" type="text" placeholder="Search..."></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-custom">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th style="width: 60px;">Sr. No.</th>
+                                    <th>Entity Name/GSTIN</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Request Type</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#" data-toggle="collapse" data-target=".demo1"><i
+                                                class="bi bi-plus"></i></a></td>
+                                    <td>1</td>
+                                    <td>KSL AND INDUSTRIES LIMITED</td>
+                                    <td>01/09/2022</td>
+                                    <td><span class="badge badge-red">Pending</span> </td>
+                                    <td> Digital PDF </td>
+                                    <td>
+                                        <span class="tool-tip" data-toggle="tooltip" title=""
+                                            data-original-title="Please select 2 or more GSTINs for this request to generate “Console Report”.">
+                                            <button class="btn btn-primary btn-primary-sm" id="btn-console-report"
+                                                data-toggle="dropdown" disabled><span><i class="bi bi-download"></i>
+                                                </span> Console Report
+                                            </button>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr class="demo1 collapse">
+                                    <td>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="" id="progress1" value="1" tabIndex="1"
+                                                    onClick="ckChange(this)"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>24AAACK4722E1Z1 (Gujarat) - <span class="text-yellow">KSL & Ind Ltd</span>
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td class="text-orange"> Action Required </td>
+                                    <td> </td>
+                                    <td><button class="btn btn-primary btn-primary-sm"
+                                            onClick="location.href='file-upload.html'">View
+                                            Details</button></td>
+                                </tr>
+                                <tr class="demo1 collapse">
+                                    <td>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="" id="progress1" value="1" tabIndex="1"
+                                                    onClick="ckChange(this)"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>22AAACK4722E7X7 (Bihar) - <span class="text-yellow">KSL AND IND. LTD</span>
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td class="text-green">Report Ready</td>
+                                    <td> Digital PDF </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm" type="button"><i
+                                                class="bi bi-download"></i>
+                                            Download</button>
+                                    </td>
+                                </tr>
+
+
+                                <tr class="demo1 collapse">
+                                    <td>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="" id="progress1" value="1" tabIndex="1"
+                                                    onClick="ckChange(this)"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>15AAACK47221R7 (Kerala) - <span class="text-yellow">KSL AND INDUSTRIES
+                                            LIMITED</span>
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td class="text-orange"> Action Required</td>
+                                    <td> </td>
+                                    <td><button class="btn btn-primary btn-primary-sm"
+                                            onClick="location.href='file-upload.html'">View
+                                            Details</button></td>
+                                </tr>
+                                <tr class="demo1 collapse">
+                                    <td>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" name="" id="progress1" value="1" tabIndex="1"
+                                                    onClick="ckChange(this)"></label>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                    <td>29AAACK47227Q4 (Assam) - <span class="text-yellow ">KSL INDUSTRIES
+                                            LIMITED</span>
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td class="text-green">Report Ready</td>
+                                    <td> Digital PDF </td>
+                                    <td><button class="btn btn-primary btn-primary-sm" disabled=""><i
+                                                class="fa fa-circle-o-notch spin"></i>&nbsp;&nbsp;Download</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="collapse" data-target=".demo4"><i
+                                                class="bi bi-plus"></i></a></td>
+                                    <td>2</td>
+                                    <td>KSL AND IND LIM
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td><span class="badge badge-green">Report Ready</span></td>
+                                    <td>Login </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="bi bi-plus"></i></a></td>
+                                    <td>3</td>
+                                    <td>TATA SONS LIMITED</td>
+                                    <td>01/09/2022</td>
+                                    <td class="text-red"><span class="badge badge-red">Error Identified</span> </td>
+                                    <td> Digital PDF </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm">View Details</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="collapse" data-target=".demo5"><i
+                                                class="bi bi-plus"></i></a></td>
+                                    <td>4</td>
+                                    <td>HOTEL CLARKS NEW
+                                    </td>
+                                    <td>01/09/2022</td>
+                                    <td><span class="badge badge-red">Pending</span> </td>
+                                    <td>Login/OTP </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm"><i class="bi bi-download"></i>
+                                            Console Report
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="bi bi-plus"></i></a></td>
+                                    <td>5</td>
+                                    <td>TATA SONS LIMITED </td>
+                                    <td>01/09/2022</td>
+                                    <td><span class="badge badge-green">Report Ready</span></td>
+                                    <td></td>
+                                    <td> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#"><i class="bi bi-plus"></i></a>
+                                    </td>
+                                    <td>6</td>
+                                    <td>KSL AND INDUSTRIES LIMITED
+                                    </td>
+                                    <td>01/08/2022</td>
+                                    <td><span class="badge badge-red">Request Expired</span> </td>
+                                    <td>Digital PDF </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm"><i class="bi bi-download"></i>
+                                            Console Report
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="collapse" data-target=".demo9"><i
+                                                class="bi bi-plus"></i></a></td>
+                                    <td>7</td>
+                                    <td>KSL AND IND LIM
+                                    </td>
+                                    <td>01/08/2022</td>
+                                    <td><span class="badge badge-green">Report Ready</span> </td>
+                                    <td>OTP </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm"><i class="bi bi-download"></i>
+                                            Console Report
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" data-toggle="collapse" data-target=".demo10"><i
+                                                class="bi bi-plus"></i></a></td>
+                                    <td>8</td>
+                                    <td>
+                                        HOTEL CLARKS NEW
+                                    </td>
+                                    <td>01/08/2022</td>
+                                    <td><span class="badge badge-red">Request Expired</span></td>
+                                    <td>Login/OTP </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-primary-sm"><i class="bi bi-download"></i>
+                                            Consol Report
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="bi bi-plus"></i></a></td>
+                                    <td>9</td>
+                                    <td>TATA SONS LIMITED</td>
+                                    <td>1/07/2022</td>
+                                    <td><span class="badge badge-red">Error Identified</span> </td>
+                                    <td>Digital PDF </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#"><i class="bi bi-plus"></i></a></td>
+                                    <td>10</td>
+                                    <td>BLUEVINE TECHNOLOGIES PRIVATE LIMITED</td>
+                                    <td>01/08/2022</td>
+                                    <td><span class="badge badge-green">Report Ready</span></td>
+                                    <td>Digital PDF </td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div id="upload-files" class="modal fade custom-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Add Files</h4>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="floating-label">
+                                <input class="floating-input" type="text" placeholder=" ">
+                                <span class="highlight"></span>
+                                <label>PAN <small class="text-red">*</small></label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="floating-label">
+                                <input class="floating-input" type="date" placeholder="">
+                                <span class="highlight"></span>
+                                <label>Frome <small class="text-red">*</small></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="floating-label">
+                                <input class="floating-input" type="date" placeholder="">
+                                <span class="highlight"></span>
+                                <label>To <small class="text-red">*</small></label>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div href="#" class="drag-area">
+                                <div class="icon"><i class="bi bi-cloud-upload"></i></div>
+                                <h2 class="drag-text">Drag and drop to upload <strong class="text-red">*</strong></h2>
+                                <a href="#" id="my-button">or Browse</a>
+                                <input type="file" id="my-file" class="hidden">
+                            </div>
+                            <div class="note-message">
+                                <strong>Note:</strong>&nbsp;
+                                <span>Please upload only Digital GSTR1 and GSTR3B (.pdf/.zip files) downloaded from the
+                                    GST portal
+                                    Composite scheme taxpayer is currently not covered as part of our product
+                                    offering</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer text-center">
+                <button class="btn btn-custom btn-outline" data-dismiss="modal">Place Request</button>
+
+            </div>
+            <div class="msg-text text-center">Please process all requests for this PAN within 30 days.</div>
+        </div>
+    </div>
+</div>

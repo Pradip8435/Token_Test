@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     box-sizing: border-box;
     font-family: var(--sofia-pro);
     background-color: var(--color-primary-50);
@@ -22,7 +22,7 @@ body {
     font-size: var(--sizing-icon-14);
     border-radius: var(--radius-4);
     border: none;
-    margin-right: var(--spacing-6);
+    margin-right: var(--spacing-12);
 }
 
 .btn-outline {
@@ -219,7 +219,7 @@ body {
     border-radius: var(--radius-4);
     color: var(--color-dark-700);
     text-transform: var(--capitalize);
-    background-image: url(/src/images/search1.svg);
+    background-image: url(../images/search1.svg);
     background-position: 95% 50%;
     background-repeat: no-repeat;
 }

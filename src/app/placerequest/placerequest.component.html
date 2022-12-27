@@ -1,0 +1,63 @@
+<div class="container-fluid" style="height: 42vw;">
+    <div class="col-sm-12 col-md-2"></div>
+    <div class="col-sm-12 col-md-8">
+        <div class="form-box">
+            <div class="box-title">
+                <h3>New Request</h3>
+
+                <div class="small text-dark">Please process all requests for this PAN within 30 days.</div>
+                <div class="small text-secondary">Please enter all the mandatory fields to enable "Continue" button.</div>
+            </div>
+            <form class=" form-custom-box">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="floating-label">      
+                            <input class="floating-input" type="text" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label>PAN <small class="text-red">*</small></label>
+
+                            <div class="note-message">
+                                <strong>Note:</strong>&nbsp;
+                                <span>In case of GSTIN, 3rd to 12th letter is the PAN number Composite scheme taxpayer is currently not covered as part of our product offering</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="floating-label">      
+                            <input class="floating-input" type="text" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label>Entity Name <small class="text-red">*</small></label>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="floating-label"> 
+                            <input class="floating-input" type="text" value="krunal.patel@corpository.com" name="tags" data-role="tagsinput">
+                            <span class="highlight"></span>
+                            <label>Email Id(To) <small class="text-red">*</small></label>    
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="floating-label"> 
+                            <input class="floating-input" type="text" value="ishir.shah@corpository.com" name="tags" data-role="tagsinput">
+                            <span class="highlight"></span>
+                            <label>Email Id(CC) <small class="text-red">*</small></label>    
+                            
+                        </div>
+                    </div>                       
+                </div>
+                <div class="form-group text-right ">
+                    <button type="reset" routerLink="" class="btn btn-primary btn-primary-lg">
+                        Back
+                    </button>
+                    <button class="btn btn-outline btn-outline-lg" id="btn-continue" onClick="location.href='place-order.html'"
+                        disabled> Continue</button>  
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
