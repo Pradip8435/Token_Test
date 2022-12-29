@@ -22,7 +22,7 @@
         "type": "sizing"
       },
       "16": {
-        "value": "16px",
+        "value": "40px",
         "type": "sizing"
       },
       "18": {
@@ -38,7 +38,7 @@
         "type": "sizing"
       },
       "32": {
-        "value": "32px",
+        "value": "80px",
         "type": "sizing"
       },
       "64": {
